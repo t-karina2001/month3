@@ -18,6 +18,7 @@ async def pin(message: types.Message):
         await message.answer("Ты пишешь в личку, пиши в группу!")
 
 
+
 def register_handler_admins(dp: Dispatcher):
     dp.register_message_handler(pin, commands=['pin'], commands_prefix='!/')
 
